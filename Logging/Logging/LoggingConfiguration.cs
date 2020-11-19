@@ -16,7 +16,7 @@ namespace Logging.Logging
 
            var env = context.HostingEnvironment;
 
-
+             
            configuration.Enrich.FromLogContext()
                .Enrich.WithProperty("ApplicationName", env.ApplicationName)
                .Enrich.WithProperty("Environment", env.EnvironmentName)
