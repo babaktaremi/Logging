@@ -28,6 +28,8 @@ namespace Logging.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
 
+            //throw new Exception("This is a test Exception");
+
             _logger.LogInformation("Getting The Weather Info");
 
             var rng = new Random();
